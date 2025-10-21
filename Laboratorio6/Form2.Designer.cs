@@ -28,39 +28,61 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.gvInventario = new System.Windows.Forms.DataGridView();
+            this.dgvInventario = new System.Windows.Forms.DataGridView();
             this.gbConsultar = new System.Windows.Forms.GroupBox();
-            this.cbGenero2 = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.btnConsultar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbGenero2 = new System.Windows.Forms.ComboBox();
             this.gbBuscar = new System.Windows.Forms.GroupBox();
             this.btnBuscar = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.gvInventario)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).BeginInit();
             this.gbConsultar.SuspendLayout();
             this.gbBuscar.SuspendLayout();
             this.SuspendLayout();
             // 
-            // gvInventario
+            // dgvInventario
             // 
-            this.gvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvInventario.Location = new System.Drawing.Point(171, 209);
-            this.gvInventario.Name = "gvInventario";
-            this.gvInventario.RowHeadersWidth = 62;
-            this.gvInventario.RowTemplate.Height = 28;
-            this.gvInventario.Size = new System.Drawing.Size(513, 195);
-            this.gvInventario.TabIndex = 0;
+            this.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvInventario.Location = new System.Drawing.Point(152, 167);
+            this.dgvInventario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvInventario.Name = "dgvInventario";
+            this.dgvInventario.RowHeadersWidth = 62;
+            this.dgvInventario.RowTemplate.Height = 28;
+            this.dgvInventario.Size = new System.Drawing.Size(456, 156);
+            this.dgvInventario.TabIndex = 0;
             // 
             // gbConsultar
             // 
             this.gbConsultar.Controls.Add(this.btnConsultar);
             this.gbConsultar.Controls.Add(this.label1);
             this.gbConsultar.Controls.Add(this.cbGenero2);
-            this.gbConsultar.Location = new System.Drawing.Point(87, 35);
+            this.gbConsultar.Location = new System.Drawing.Point(77, 28);
+            this.gbConsultar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbConsultar.Name = "gbConsultar";
-            this.gbConsultar.Size = new System.Drawing.Size(353, 157);
+            this.gbConsultar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbConsultar.Size = new System.Drawing.Size(314, 126);
             this.gbConsultar.TabIndex = 1;
             this.gbConsultar.TabStop = false;
             this.gbConsultar.Text = "Consultar";
+            // 
+            // btnConsultar
+            // 
+            this.btnConsultar.Location = new System.Drawing.Point(105, 82);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConsultar.Name = "btnConsultar";
+            this.btnConsultar.Size = new System.Drawing.Size(106, 26);
+            this.btnConsultar.TabIndex = 2;
+            this.btnConsultar.Text = "Consultar";
+            this.btnConsultar.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(15, 43);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(103, 16);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Género Literario";
             // 
             // cbGenero2
             // 
@@ -71,59 +93,48 @@
             "fantasia",
             "historia",
             "poemas"});
-            this.cbGenero2.Location = new System.Drawing.Point(175, 51);
+            this.cbGenero2.Location = new System.Drawing.Point(156, 41);
+            this.cbGenero2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cbGenero2.Name = "cbGenero2";
-            this.cbGenero2.Size = new System.Drawing.Size(142, 28);
+            this.cbGenero2.Size = new System.Drawing.Size(127, 24);
             this.cbGenero2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 54);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Género Literario";
-            // 
-            // btnConsultar
-            // 
-            this.btnConsultar.Location = new System.Drawing.Point(118, 102);
-            this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(119, 32);
-            this.btnConsultar.TabIndex = 2;
-            this.btnConsultar.Text = "Consultar";
-            this.btnConsultar.UseVisualStyleBackColor = true;
             // 
             // gbBuscar
             // 
             this.gbBuscar.Controls.Add(this.btnBuscar);
-            this.gbBuscar.Location = new System.Drawing.Point(462, 35);
+            this.gbBuscar.Location = new System.Drawing.Point(411, 28);
+            this.gbBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbBuscar.Name = "gbBuscar";
-            this.gbBuscar.Size = new System.Drawing.Size(287, 157);
+            this.gbBuscar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbBuscar.Size = new System.Drawing.Size(255, 126);
             this.gbBuscar.TabIndex = 2;
             this.gbBuscar.TabStop = false;
             this.gbBuscar.Text = "Libros Disponibles";
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(104, 78);
+            this.btnBuscar.Location = new System.Drawing.Point(92, 62);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(96, 31);
+            this.btnBuscar.Size = new System.Drawing.Size(85, 25);
             this.btnBuscar.TabIndex = 0;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(711, 360);
             this.Controls.Add(this.gbBuscar);
             this.Controls.Add(this.gbConsultar);
-            this.Controls.Add(this.gvInventario);
+            this.Controls.Add(this.dgvInventario);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form2";
             this.Text = "Form2";
-            ((System.ComponentModel.ISupportInitialize)(this.gvInventario)).EndInit();
+            this.Load += new System.EventHandler(this.Form2_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInventario)).EndInit();
             this.gbConsultar.ResumeLayout(false);
             this.gbConsultar.PerformLayout();
             this.gbBuscar.ResumeLayout(false);
@@ -133,7 +144,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView gvInventario;
+        private System.Windows.Forms.DataGridView dgvInventario;
         private System.Windows.Forms.GroupBox gbConsultar;
         private System.Windows.Forms.ComboBox cbGenero2;
         private System.Windows.Forms.Label label1;

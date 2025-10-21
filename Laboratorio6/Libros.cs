@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Laboratorio6
+namespace Laboratorio6.Entidades
 {
     public class Libros
     {
@@ -13,5 +13,19 @@ namespace Laboratorio6
         public string Autor { get; set; }
 
         public string Genero { get; set; }
-    }
+
+        public int CantidadDisponible { get; set; }
+
+        public Libros(string titulo, string autor, string genero,int cantidad)
+        {
+            Titulo = titulo.Trim();
+            Autor = autor.Trim();
+            Genero = genero.Trim();
+            CantidadDisponible = cantidad;
+        }
+        public Libros()
+        {
+
+        }
+    } 
 }
