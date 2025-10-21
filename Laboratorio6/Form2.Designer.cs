@@ -43,12 +43,12 @@
             // dgvInventario
             // 
             this.dgvInventario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvInventario.Location = new System.Drawing.Point(152, 167);
-            this.dgvInventario.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvInventario.Location = new System.Drawing.Point(58, 136);
+            this.dgvInventario.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvInventario.Name = "dgvInventario";
             this.dgvInventario.RowHeadersWidth = 62;
             this.dgvInventario.RowTemplate.Height = 28;
-            this.dgvInventario.Size = new System.Drawing.Size(456, 156);
+            this.dgvInventario.Size = new System.Drawing.Size(536, 127);
             this.dgvInventario.TabIndex = 0;
             // 
             // gbConsultar
@@ -56,31 +56,33 @@
             this.gbConsultar.Controls.Add(this.btnConsultar);
             this.gbConsultar.Controls.Add(this.label1);
             this.gbConsultar.Controls.Add(this.cbGenero2);
-            this.gbConsultar.Location = new System.Drawing.Point(77, 28);
-            this.gbConsultar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbConsultar.Location = new System.Drawing.Point(58, 23);
+            this.gbConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbConsultar.Name = "gbConsultar";
-            this.gbConsultar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbConsultar.Size = new System.Drawing.Size(314, 126);
+            this.gbConsultar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbConsultar.Size = new System.Drawing.Size(236, 102);
             this.gbConsultar.TabIndex = 1;
             this.gbConsultar.TabStop = false;
             this.gbConsultar.Text = "Consultar";
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(105, 82);
-            this.btnConsultar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConsultar.Location = new System.Drawing.Point(79, 67);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(106, 26);
+            this.btnConsultar.Size = new System.Drawing.Size(80, 21);
             this.btnConsultar.TabIndex = 2;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
+            this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 43);
+            this.label1.Location = new System.Drawing.Point(11, 35);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 16);
+            this.label1.Size = new System.Drawing.Size(82, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Género Literario";
             // 
@@ -93,30 +95,30 @@
             "fantasia",
             "historia",
             "poemas"});
-            this.cbGenero2.Location = new System.Drawing.Point(156, 41);
-            this.cbGenero2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbGenero2.Location = new System.Drawing.Point(117, 33);
+            this.cbGenero2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbGenero2.Name = "cbGenero2";
-            this.cbGenero2.Size = new System.Drawing.Size(127, 24);
+            this.cbGenero2.Size = new System.Drawing.Size(96, 21);
             this.cbGenero2.TabIndex = 0;
             // 
             // gbBuscar
             // 
             this.gbBuscar.Controls.Add(this.btnBuscar);
-            this.gbBuscar.Location = new System.Drawing.Point(411, 28);
-            this.gbBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.gbBuscar.Location = new System.Drawing.Point(308, 23);
+            this.gbBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gbBuscar.Name = "gbBuscar";
-            this.gbBuscar.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbBuscar.Size = new System.Drawing.Size(255, 126);
+            this.gbBuscar.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.gbBuscar.Size = new System.Drawing.Size(286, 102);
             this.gbBuscar.TabIndex = 2;
             this.gbBuscar.TabStop = false;
             this.gbBuscar.Text = "Libros Disponibles";
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(92, 62);
-            this.btnBuscar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBuscar.Location = new System.Drawing.Point(69, 50);
+            this.btnBuscar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(85, 25);
+            this.btnBuscar.Size = new System.Drawing.Size(64, 20);
             this.btnBuscar.TabIndex = 0;
             this.btnBuscar.Text = "Buscar";
             this.btnBuscar.UseVisualStyleBackColor = true;
@@ -124,13 +126,13 @@
             // 
             // Form2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.ClientSize = new System.Drawing.Size(682, 292);
             this.Controls.Add(this.gbBuscar);
             this.Controls.Add(this.gbConsultar);
             this.Controls.Add(this.dgvInventario);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form2";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);

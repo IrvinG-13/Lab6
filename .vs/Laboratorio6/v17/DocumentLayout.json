@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\",
+  "WorkspaceRootPath": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|c:\\users\\osese\\documents\\lab6\\lab6\\laboratorio6\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|c:\\users\\smith\\documents\\software iv c#\\lab#6\\lab6\\laboratorio6\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|solutionrelative:laboratorio6\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|C:\\Users\\osese\\Documents\\Lab6\\Lab6\\laboratorio6\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|solutionrelative:laboratorio6\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|c:\\users\\osese\\documents\\lab6\\lab6\\laboratorio6\\libreria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\laboratorio6\\libreria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|solutionrelative:laboratorio6\\libreria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|C:\\Users\\osese\\Documents\\Lab6\\Lab6\\laboratorio6\\logicalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|solutionrelative:laboratorio6\\logicalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|C:\\Users\\osese\\Documents\\Lab6\\Lab6\\laboratorio6\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\laboratorio6\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|solutionrelative:laboratorio6\\form2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|C:\\Users\\osese\\Documents\\Lab6\\Lab6\\laboratorio6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\laboratorio6\\logicalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|solutionrelative:laboratorio6\\logicalibros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\laboratorio6\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|solutionrelative:laboratorio6\\libros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\laboratorio6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|solutionrelative:laboratorio6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|C:\\Users\\osese\\Documents\\Lab6\\Lab6\\laboratorio6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\laboratorio6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8D40AA82-F77F-4B0D-B60B-419BEB1A315F}|Laboratorio6\\Laboratorio6.csproj|solutionrelative:laboratorio6\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -38,52 +38,49 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form2.cs",
-              "DocumentMoniker": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\Form2.cs",
               "RelativeDocumentMoniker": "Laboratorio6\\Form2.cs",
-              "ToolTip": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Form2.cs",
+              "ToolTip": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\Form2.cs",
               "RelativeToolTip": "Laboratorio6\\Form2.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAqwJUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T14:18:54.584Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
+              "Title": "Libreria.cs",
+              "DocumentMoniker": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\Libreria.cs",
+              "RelativeDocumentMoniker": "Laboratorio6\\Libreria.cs",
+              "ToolTip": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\Libreria.cs",
+              "RelativeToolTip": "Laboratorio6\\Libreria.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAqwG4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T16:24:08.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Form2.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Form2.cs",
+              "DocumentMoniker": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\Form2.cs",
               "RelativeDocumentMoniker": "Laboratorio6\\Form2.cs",
-              "ToolTip": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Form2.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\Form2.cs [Dise\u00F1o]",
               "RelativeToolTip": "Laboratorio6\\Form2.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-20T16:03:23.844Z",
@@ -91,26 +88,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Libreria.cs",
-              "DocumentMoniker": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Libreria.cs",
-              "RelativeDocumentMoniker": "Laboratorio6\\Libreria.cs",
-              "ToolTip": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Libreria.cs",
-              "RelativeToolTip": "Laboratorio6\\Libreria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T16:24:08.235Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "LogicaLibros.cs",
-              "DocumentMoniker": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\LogicaLibros.cs",
+              "DocumentMoniker": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\LogicaLibros.cs",
               "RelativeDocumentMoniker": "Laboratorio6\\LogicaLibros.cs",
-              "ToolTip": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\LogicaLibros.cs",
+              "ToolTip": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\LogicaLibros.cs",
               "RelativeToolTip": "Laboratorio6\\LogicaLibros.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T01:04:17.234Z",
               "EditorCaption": ""
@@ -119,39 +103,36 @@
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "Form1.cs",
-              "DocumentMoniker": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\Form1.cs",
               "RelativeDocumentMoniker": "Laboratorio6\\Form1.cs",
-              "ToolTip": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Form1.cs",
+              "ToolTip": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\Form1.cs",
               "RelativeToolTip": "Laboratorio6\\Form1.cs",
               "ViewState": "AgIAAGEAAAAAAAAAAAAiwG8AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T16:40:23.714Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T16:40:23.714Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Libros.cs",
-              "DocumentMoniker": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Libros.cs",
+              "DocumentMoniker": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\Libros.cs",
               "RelativeDocumentMoniker": "Laboratorio6\\Libros.cs",
-              "ToolTip": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Libros.cs",
+              "ToolTip": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\Libros.cs",
               "RelativeToolTip": "Laboratorio6\\Libros.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T16:38:55.661Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-20T16:38:55.661Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Form1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Smith\\Documents\\Software IV C#\\Lab#6\\Lab6\\Laboratorio6\\Form1.cs",
               "RelativeDocumentMoniker": "Laboratorio6\\Form1.cs",
               "ToolTip": "C:\\Users\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Form1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Laboratorio6\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\osese\\Documents\\Lab6\\Lab6\\Laboratorio6\\Form1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-20T15:40:23.128Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2025-10-20T15:40:23.128Z"
             }
           ]
         }

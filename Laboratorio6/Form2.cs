@@ -1,7 +1,8 @@
 ﻿using Laboratorio6.Datos;
-using Laboratorio6.Logica;
 using Laboratorio6.Entidades;
+using Laboratorio6.Logica;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,11 +20,12 @@ namespace Laboratorio6
         public Form2()
         {
             InitializeComponent();
+            logicaLibros = new LogicaLibros();
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-
+            ConfigurarDataGridView();
         }
         private void FormatearColumnas()
         {
@@ -44,6 +46,22 @@ namespace Laboratorio6
             }
         }
 
+        private void ConfigurarDataGridView()
+        {
+            // Modo de selección
+            dgvInventario.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvInventario.MultiSelect = false;
+
+            // Deshabilitar agregar filas
+            dgvInventario.AllowUserToAddRows = false;
+            dgvInventario.AllowUserToDeleteRows = false;
+            dgvInventario.ReadOnly = true;
+
+            // Ajustar columnas
+            dgvInventario.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+        }
+
+
         private void btnBuscar_Click(object sender, EventArgs e)
             //obtener todos
         {
@@ -56,7 +74,7 @@ namespace Laboratorio6
                 dgvInventario.DataSource = null;
                 dgvInventario.DataSource = lista;
 
-                FormatearColumnas();
+                //FormatearColumnas();
 
 
                 if (lista.Count == 0)
@@ -71,7 +89,7 @@ namespace Laboratorio6
                 else
                 {
                     MessageBox.Show(
-                        $"Se encontraron {lista.Count} empleado(s).",
+                        $"Se encontraron {lista.Count} libro(s).",
                         "Consulta exitosa",
                         MessageBoxButtons.OK,
                         MessageBoxIcon.Information
@@ -88,5 +106,78 @@ namespace Laboratorio6
                 );
             }   
         }
+
+        private void btnConsultar_Click(object sender, EventArgs e)
+            //Busqueda por genero
+        {
+            try
+            {
+                // Validar selección
+                if (cbGenero2.SelectedItem == null)
+                {
+                    MessageBox.Show(
+                        "Debe seleccionar un genero.",
+                        "Campo requerido",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Warning
+                    );
+                    cbGenero2.Focus();
+                    return;
+                }
+
+                string genero = cbGenero2.SelectedItem.ToString();
+
+                // Consultar empleados
+                List<Libros> libros = logicaLibros.ObtenerPorGenero(genero);
+
+                // Mostrar en DataGridView
+                dgvInventario.DataSource = null;
+                dgvInventario.DataSource = libros;
+
+
+                FormatearColumnas();
+
+
+                if (libros.Count == 0)
+                {
+                    MessageBox.Show(
+                        $"No hay libros de tipo {genero}.",
+                        "Sin resultados",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                    );
+                }
+                else
+                {
+                    MessageBox.Show(
+                        $"Se encontraron {libros.Count} libro(s).",
+                        "Consulta exitosa",
+                        MessageBoxButtons.OK,
+                        MessageBoxIcon.Information
+                    );
+                }
+            }
+            catch (ArgumentException ex)
+            {
+                MessageBox.Show(
+                    $"Error al consultar libros:\n\n{ex.Message}",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(
+                    $"Error al consultar libros:\n\n{ex.Message}",
+                    "Error",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Error
+                );
+            }
+        }
+
+
+
     }
 }

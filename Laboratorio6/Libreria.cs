@@ -16,7 +16,7 @@ namespace Laboratorio6.Datos
     {
         public Libreria() { }
         private string cadenaConexion =
-         "Data Source=ELISAOSES;Initial Catalog=Libreria;Integrated Security=True";
+         "Data Source=localhost;Initial Catalog=Libreria;Integrated Security=True";
 
 
 
@@ -79,8 +79,8 @@ namespace Laboratorio6.Datos
                                 {
                                     Titulo = reader["Titulo"].ToString(),
                                     Autor = reader["Autor"].ToString(),
-                                    Genero = reader["Genero"].ToString(),
-                                    CantidadDisponible = Convert.ToInt32(reader["Cantidad"])
+                                    Genero = reader["Genero_Literario"].ToString(),
+                                    CantidadDisponible = Convert.ToInt32(reader["Cantidad_Disponible"])
                                 };
 
                                 lista.Add(libro);
@@ -121,8 +121,8 @@ namespace Laboratorio6.Datos
                                 {
                                     Titulo = reader["Titulo"].ToString(),
                                     Autor = reader["Autor"].ToString(),
-                                    Genero = reader["Genero"].ToString(),
-                                    CantidadDisponible = Convert.ToInt32(reader["Cantidad"])
+                                    Genero = reader["Genero_Literario"].ToString(),
+                                    CantidadDisponible = Convert.ToInt32(reader["Cantidad_Disponible"])
                             };
 
                             lista.Add(libro);

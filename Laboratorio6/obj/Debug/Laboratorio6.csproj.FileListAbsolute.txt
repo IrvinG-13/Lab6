@@ -10,3 +10,15 @@ C:\Users\osese\Documents\Lab6\Lab6\Laboratorio6\bin\Debug\Laboratorio6.pdb
 C:\Users\osese\Documents\Lab6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.exe
 C:\Users\osese\Documents\Lab6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.pdb
 C:\Users\osese\Documents\Lab6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.exe.config
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\bin\Debug\Laboratorio6.exe.config
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\bin\Debug\Laboratorio6.exe
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\bin\Debug\Laboratorio6.pdb
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.csproj.AssemblyReference.cache
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.exe.config
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.Form1.resources
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.Form2.resources
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.Properties.Resources.resources
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.csproj.GenerateResource.cache
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.csproj.CoreCompileInputs.cache
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.exe
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.pdb
