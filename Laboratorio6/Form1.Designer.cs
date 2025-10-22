@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtCantidad = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.cbGenero = new System.Windows.Forms.ComboBox();
             this.labe = new System.Windows.Forms.Label();
@@ -37,8 +39,6 @@
             this.txtTitulo = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,21 +52,42 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.txtAutor);
             this.groupBox1.Controls.Add(this.txtTitulo);
-            this.groupBox1.Location = new System.Drawing.Point(51, 31);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Location = new System.Drawing.Point(38, 25);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox1.Size = new System.Drawing.Size(578, 246);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(434, 200);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registrar Libro";
             // 
+            // txtCantidad
+            // 
+            this.txtCantidad.Location = new System.Drawing.Point(137, 150);
+            this.txtCantidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCantidad.MaxLength = 50;
+            this.txtCantidad.Name = "txtCantidad";
+            this.txtCantidad.Size = new System.Drawing.Size(133, 20);
+            this.txtCantidad.TabIndex = 7;
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(43, 150);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(98, 13);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Cantidad de copias";
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 142);
+            this.label2.Location = new System.Drawing.Point(43, 115);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(103, 16);
+            this.label2.Size = new System.Drawing.Size(82, 13);
             this.label2.TabIndex = 5;
             this.label2.Text = "Género Literario";
             // 
@@ -79,56 +100,58 @@
             "fantasia",
             "historia",
             "poemas"});
-            this.cbGenero.Location = new System.Drawing.Point(183, 135);
-            this.cbGenero.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbGenero.Location = new System.Drawing.Point(137, 110);
+            this.cbGenero.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbGenero.Name = "cbGenero";
-            this.cbGenero.Size = new System.Drawing.Size(165, 24);
+            this.cbGenero.Size = new System.Drawing.Size(125, 21);
             this.cbGenero.TabIndex = 4;
             // 
             // labe
             // 
             this.labe.AutoSize = true;
-            this.labe.Location = new System.Drawing.Point(57, 90);
+            this.labe.Location = new System.Drawing.Point(43, 73);
+            this.labe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labe.Name = "labe";
-            this.labe.Size = new System.Drawing.Size(38, 16);
+            this.labe.Size = new System.Drawing.Size(32, 13);
             this.labe.TabIndex = 3;
             this.labe.Text = "Autor";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(57, 38);
+            this.label1.Location = new System.Drawing.Point(43, 31);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 16);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 2;
             this.label1.Text = "Título";
             // 
             // txtAutor
             // 
-            this.txtAutor.Location = new System.Drawing.Point(183, 87);
-            this.txtAutor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAutor.Location = new System.Drawing.Point(137, 71);
+            this.txtAutor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAutor.MaxLength = 50;
             this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(176, 22);
+            this.txtAutor.Size = new System.Drawing.Size(133, 20);
             this.txtAutor.TabIndex = 1;
             this.txtAutor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAutor_KeyPress);
             // 
             // txtTitulo
             // 
-            this.txtTitulo.Location = new System.Drawing.Point(183, 45);
-            this.txtTitulo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTitulo.Location = new System.Drawing.Point(137, 37);
+            this.txtTitulo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtTitulo.MaxLength = 100;
             this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(176, 22);
+            this.txtTitulo.Size = new System.Drawing.Size(133, 20);
             this.txtTitulo.TabIndex = 0;
             this.txtTitulo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtTitulo_KeyPress);
             // 
             // btnRegistrar
             // 
-            this.btnRegistrar.Location = new System.Drawing.Point(165, 294);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnRegistrar.Location = new System.Drawing.Point(124, 239);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(118, 36);
+            this.btnRegistrar.Size = new System.Drawing.Size(88, 29);
             this.btnRegistrar.TabIndex = 1;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
@@ -136,44 +159,27 @@
             // 
             // btnConsultar
             // 
-            this.btnConsultar.Location = new System.Drawing.Point(394, 294);
-            this.btnConsultar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnConsultar.Location = new System.Drawing.Point(296, 239);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnConsultar.Name = "btnConsultar";
-            this.btnConsultar.Size = new System.Drawing.Size(118, 36);
+            this.btnConsultar.Size = new System.Drawing.Size(88, 29);
             this.btnConsultar.TabIndex = 2;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(57, 185);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(155, 20);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Cantidad de copias";
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Location = new System.Drawing.Point(183, 185);
-            this.txtCantidad.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCantidad.MaxLength = 50;
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(176, 22);
-            this.txtCantidad.TabIndex = 7;
-            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
-            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(711, 360);
+            this.BackgroundImage = global::Laboratorio6.Properties.Resources.hacking;
+            this.ClientSize = new System.Drawing.Size(600, 346);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);

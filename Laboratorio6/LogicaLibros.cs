@@ -43,5 +43,13 @@ namespace Laboratorio6.Logica
 
             return datosLibros.ObtenerPorGenero(genero);
         }
+
+        public bool EliminarLibroPorTitulo(string titulo)
+        {
+            if (string.IsNullOrWhiteSpace(titulo))
+                throw new ArgumentException("Debe especificar un título válido.");
+
+            return datosLibros.EliminarLibroPorTitulo(titulo);
+        }
     }
 }

@@ -27,24 +27,7 @@ namespace Laboratorio6
         {
             ConfigurarDataGridView();
         }
-        private void FormatearColumnas()
-        {
-            if (dgvInventario.Columns.Contains("Salario"))
-            {
-                dgvInventario.Columns["Salario"].DefaultCellStyle.Format = "C2";
-                dgvInventario.Columns["Salario"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
-            }
-
-            if (dgvInventario.Columns.Contains("Nombre"))
-            {
-                dgvInventario.Columns["Nombre"].Width = 200;
-            }
-
-            if (dgvInventario.Columns.Contains("Departamento"))
-            {
-                dgvInventario.Columns["Departamento"].Width = 150;
-            }
-        }
+       
 
         private void ConfigurarDataGridView()
         {
@@ -54,7 +37,7 @@ namespace Laboratorio6
 
             // Deshabilitar agregar filas
             dgvInventario.AllowUserToAddRows = false;
-            dgvInventario.AllowUserToDeleteRows = false;
+            dgvInventario.AllowUserToDeleteRows = true;
             dgvInventario.ReadOnly = true;
 
             // Ajustar columnas
@@ -135,9 +118,6 @@ namespace Laboratorio6
                 dgvInventario.DataSource = libros;
 
 
-                FormatearColumnas();
-
-
                 if (libros.Count == 0)
                 {
                     MessageBox.Show(
@@ -177,7 +157,63 @@ namespace Laboratorio6
             }
         }
 
+        private void btnEliminarLibro_Click(object sender, EventArgs e)
+        {
+            if (dgvInventario.SelectedRows.Count > 0)
+            {
+                DataGridViewRow filaSeleccionada = dgvInventario.SelectedRows[0];
 
+                string titulo = filaSeleccionada.Cells["Titulo"].Value.ToString();
+                string autor = filaSeleccionada.Cells["Autor"].Value.ToString();
 
+                DialogResult resultado = MessageBox.Show(
+                    $"¿Estás seguro de eliminar el libro?\n\n" +
+                    $"Título: {titulo}\n" +
+                    $"Autor: {autor}",
+                    "Confirmar Eliminación",
+                    MessageBoxButtons.YesNo,
+                    MessageBoxIcon.Warning);
+
+                if (resultado == DialogResult.Yes)
+                {
+                    try
+                    {
+                        // Ahora retorna booleano
+                        bool eliminado = logicaLibros.EliminarLibroPorTitulo(titulo);
+
+                        if (eliminado)
+                        {
+                            // Actualizar el DataGridView
+                            List<Libros> listaActualizada = logicaLibros.ObtenerTodos();
+                            dgvInventario.DataSource = null;
+                            dgvInventario.DataSource = listaActualizada;
+
+                            MessageBox.Show("Libro eliminado correctamente",
+                                "Éxito",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No se encontró el libro para eliminar",
+                                "Información",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Information);
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show($"Error al eliminar: {ex.Message}",
+                            "Error",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Por favor, selecciona un libro de la lista");
+            }
+        }
     }
 }

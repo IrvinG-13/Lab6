@@ -1,4 +1,5 @@
-﻿using Microsoft.SqlServer.Server;
+﻿using Laboratorio6.Entidades;
+using Microsoft.SqlServer.Server;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -7,7 +8,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Laboratorio6.Entidades;
+using System.Windows.Forms;
 
 namespace Laboratorio6.Datos
 {
@@ -51,7 +52,7 @@ namespace Laboratorio6.Datos
             }
             catch (SqlException ex)
             {
-                throw new Exception("Errror al insertar libro:" + ex.Message);
+                throw new Exception("Error al insertar libro:" + ex.Message);
             }
             return idLibros;
         }
@@ -140,5 +141,29 @@ namespace Laboratorio6.Datos
             return lista;
         }
 
+        // Eliminar libro por titulo
+        public bool EliminarLibroPorTitulo(string titulo)
+        {
+            using (SqlConnection connection = new SqlConnection(cadenaConexion))
+            {
+                try
+                {
+                    connection.Open();
+
+                    using (SqlCommand command = new SqlCommand("sp_EliminarLibroPorTitulo", connection))
+                    {
+                        command.CommandType = CommandType.StoredProcedure;
+                        command.Parameters.AddWithValue("@Titulo", titulo);
+
+                        int filasAfectadas = command.ExecuteNonQuery();
+                        return filasAfectadas > 0; // True si eliminó, False si no encontró
+                    }
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Error al eliminar libro: " + ex.Message, ex);
+                }
+            }
+        }
     }
 }
