@@ -27,13 +27,16 @@ namespace Laboratorio6
             txtTitulo.TextChanged += ValidarFormulario;
             txtCantidad.TextChanged += ValidarFormulario;
             cbGenero.SelectedIndexChanged += ValidarFormulario;
+            txtTitulo.ContextMenu = new ContextMenu();   
+            txtAutor.ContextMenu = new ContextMenu();
+            txtCantidad.ContextMenu = new ContextMenu();
         }
 
         private void ValidarFormulario(object sender, EventArgs e)
         {
             bool nombreAutor = !string.IsNullOrWhiteSpace(txtAutor.Text);
             bool tituloLibro = !string.IsNullOrWhiteSpace(txtTitulo.Text);
-            bool cantidadDisponible =!string.IsNullOrWhiteSpace(txtCantidad.Text);
+            bool cantidadDisponible = !string.IsNullOrWhiteSpace(txtCantidad.Text);
             bool generoSelecionado = cbGenero.SelectedIndex != -1;
 
             btnRegistrar.Enabled = nombreAutor && tituloLibro && generoSelecionado;
@@ -44,25 +47,14 @@ namespace Laboratorio6
         {
             try
             {
-                if (!int.TryParse(txtCantidad.Text, out int cantidad) || cantidad < 0)
-                {
-                    MessageBox.Show(
-                        "La cantidad debe ser un número entero válido y no negativo.\n\nEjemplo: 10",
-                        "Error de formato",
-                        MessageBoxButtons.OK,
-                        MessageBoxIcon.Error
-                    );
-                    txtCantidad.Focus();
-                    txtCantidad.SelectAll();
-                    return;
-                }
+                
 
                 //Crear un libro nuevo 
                 Libros nuevoLibro = new Libros(
                     txtTitulo.Text.Trim(),
                     txtAutor.Text.Trim(),
                     cbGenero.SelectedItem.ToString(),
-                    cantidad
+                    (int)txtCantidad.Value
                     );
 
                 // Insertar en BD
@@ -99,7 +91,6 @@ namespace Laboratorio6
             {
                 txtTitulo.Clear();
                 txtAutor.Clear();
-                txtCantidad.Clear();
                 cbGenero.SelectedIndex = -1;
                 txtTitulo.Focus();
                 btnRegistrar.Enabled = false;
@@ -134,15 +125,44 @@ namespace Laboratorio6
 
         }
 
-        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtTitulo_KeyDown(object sender, KeyEventArgs e)
         {
-            if (!char.IsDigit(e.KeyChar) && !char.IsControl(e.KeyChar))
+            if ((e.Control && e.KeyCode == Keys.V) || (e.Shift && e.KeyCode == Keys.Insert))
             {
-                e.Handled = true;
-                MessageBox.Show("Solo se permiten números en este campo.", "Advertencia",
-               MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("No se admiten valores copiados");
+                e.SuppressKeyPress = true;
+                txtTitulo.Clear();
+
             }
 
         }
+
+        private void txtAutor_KeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.Control && e.KeyCode == Keys.V) || (e.Shift && e.KeyCode == Keys.Insert))
+            {
+                MessageBox.Show("No se admiten valores copiados");
+                e.SuppressKeyPress = true;
+                txtAutor.Clear();
+
+            }
+        }
+
+        private void txtCantidad_KeyDown(object sender, KeyEventArgs e)
+        {
+            if ((e.Control && e.KeyCode == Keys.V) || (e.Shift && e.KeyCode == Keys.Insert))
+            {
+                MessageBox.Show("No se admiten valores copiados");
+                e.SuppressKeyPress = true;
+                txtCantidad.Value = 0;
+
+            }
+        }
+
+        
+
+       
+
+
     }
 }

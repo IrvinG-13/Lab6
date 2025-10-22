@@ -63,6 +63,16 @@ namespace Laboratorio6.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Formulario {
+            get {
+                object obj = ResourceManager.GetObject("Formulario", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hacker_11936 {
             get {
                 object obj = ResourceManager.GetObject("hacker-11936", resourceCulture);

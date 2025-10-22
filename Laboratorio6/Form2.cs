@@ -26,6 +26,8 @@ namespace Laboratorio6
         private void Form2_Load(object sender, EventArgs e)
         {
             ConfigurarDataGridView();
+            cbGenero2.ContextMenu = new ContextMenu();
+            cbGenero2.DropDownStyle = ComboBoxStyle.DropDownList;
         }
        
 
@@ -215,5 +217,7 @@ namespace Laboratorio6
                 MessageBox.Show("Por favor, selecciona un libro de la lista");
             }
         }
+
+        
     }
 }
