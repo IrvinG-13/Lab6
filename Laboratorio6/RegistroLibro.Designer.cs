@@ -1,6 +1,6 @@
 ﻿namespace Laboratorio6
 {
-    partial class Form1
+    partial class RegistroLibro
     {
         /// <summary>
         /// Variable del diseñador necesaria.

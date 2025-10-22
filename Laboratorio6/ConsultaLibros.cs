@@ -14,10 +14,10 @@ using System.Windows.Forms;
 
 namespace Laboratorio6
 {
-    public partial class Form2 : Form
+    public partial class ConsultaLibros : Form
     {
         private LogicaLibros logicaLibros;
-        public Form2()
+        public ConsultaLibros()
         {
             InitializeComponent();
             logicaLibros = new LogicaLibros();
@@ -58,6 +58,10 @@ namespace Laboratorio6
 
                 dgvInventario.DataSource = null;
                 dgvInventario.DataSource = lista;
+                dgvInventario.SelectionMode = DataGridViewSelectionMode.CellSelect;
+
+                //dgvInventario.Columns["CantidadDisponible"].ReadOnly = false;
+
 
                 //FormatearColumnas();
 
@@ -218,6 +222,11 @@ namespace Laboratorio6
             }
         }
 
-        
+        private void button1_Click(object sender, EventArgs e)
+        {
+            EdicionLibro edicionLibro = new EdicionLibro();
+            edicionLibro.Show();
+            this.Hide();
+        }
     }
 }

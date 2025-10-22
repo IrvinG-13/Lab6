@@ -12,9 +12,9 @@ using Laboratorio6.Logica;
 
 namespace Laboratorio6
 {
-    public partial class Form1 : Form
+    public partial class RegistroLibro : Form
     {
-        public Form1()
+        public RegistroLibro()
         {
             InitializeComponent();
         }
@@ -99,7 +99,7 @@ namespace Laboratorio6
 
         private void btnConsultar_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            ConsultaLibros form2 = new ConsultaLibros();
             this.Hide();
             form2.Show();
         }

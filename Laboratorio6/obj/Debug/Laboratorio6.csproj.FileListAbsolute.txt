@@ -22,3 +22,4 @@ C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Labora
 C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.csproj.CoreCompileInputs.cache
 C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.exe
 C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.pdb
+C:\Users\Smith\Documents\Software IV C#\Lab#6\Lab6\Laboratorio6\obj\Debug\Laboratorio6.EdicionLibro.resources
